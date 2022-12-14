@@ -1,16 +1,17 @@
 import {
-    Proposition,
     Benefits,
     Testimonial,
     Form,
     Footer
     
   } from "../components/export";
+
+import { Proposition } from "../components/Proposition";
   
   const Landingpage = () => {
     return (
       <div className="landing">
-        <Proposition/>
+        <Proposition />
         <Benefits/>
         <Testimonial/>
         <Form/>
