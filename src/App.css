@@ -80,33 +80,6 @@ h3 span{
   color: #00B894;
 }
 
-.hero{
-  height:85vh;
-  background-image: url(./images/mars.webp);
-  background-size: 100%;
-  padding: 0 200px;
-
-}
-
-.logo{
-  width: 100%;
-  font-weight: 400;
-  display: flex;
-  justify-content: center;
-  z-index: 10;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) -55.71%, #FFFFFF 126.43%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-
-}
-.box-hero{
-  width: 60%;
-  margin-top: 80px;
-}
-.box-hero h2, p{
-  color: #F0F4F3;
-}
 .benefits{
   height: 100%;
   padding: 0px 200px  0px 200px;
@@ -359,7 +332,7 @@ background-clip: text;
   width: 100%;
 }
 
-form input{
+form input {
  
   border-radius: 4px;
   font-family: 'Montserrat', sans-serif;
@@ -388,6 +361,7 @@ form input{
   justify-content: space-between;
   align-items: center;
   }
+
   .socialmedia{
     display: flex;
     width: 100px;

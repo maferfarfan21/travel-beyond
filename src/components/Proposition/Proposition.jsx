@@ -1,13 +1,14 @@
 import React from "react";
+import styles from './Proposition.module.css'
 
 
 const Proposition = () => {
   return (
-   <div className="hero"> 
-    <div className="logo">
+   <div className={styles.hero}> 
+    <div className={styles.logo}>
       <h1>Travel Beyond</h1>
     </div>
-    <div className="box-hero">
+    <div className={styles['box-hero']}>
       <h2>
       Date el gusto que todo millonario se merece,<br /> <span>viaja a Marte</span> 
       </h2>
