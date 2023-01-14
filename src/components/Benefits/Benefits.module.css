@@ -1,0 +1,126 @@
+
+.benefits{
+    height: 100%;
+    padding: 0px 200px  0px 200px;
+  }
+  .benefits .tittle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .benefits .tittle h3{
+    width: 50%;
+    text-align: center;
+  }
+  .benefits .button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 2rem 0;
+  
+   
+  }
+  .benefits .tittle h2 span{
+    background: var(--primary-color);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: var(--primary-font);
+  }
+  
+  
+  .back-benefits-one,
+  .back-benefits-two,
+  .back-benefits-three{
+    
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center;
+    margin-top: 124px;
+    border-radius: 4px;
+    filter: opacity(80%);
+  
+    
+  
+  }
+  .back-benefits-one:hover,
+  .back-benefits-two:hover,
+  .back-benefits-three:hover{
+    
+    transition: 500ms ease-in-out;
+    filter: opacity(100%);
+    
+  
+  }
+  .back-benefits-one,
+  .back-benefits-three{
+    padding: 8rem  3rem 3rem  3rem  ;
+    
+  }
+  .back-benefits-two{
+    padding: 8rem  3rem 3rem  3rem  ;
+    text-align: right;
+  
+  }
+  
+  .back-benefits-one{
+    background-image: url(../images/Frame-39.webp) ;
+  }
+  .back-benefits-two{
+    background-image: url(../images/Group-3.webp) ;
+  }
+  .back-benefits-three{
+    background-image: url(../images/Group-4.webp) ;
+  }
+  @media (max-width: 600px) {
+  
+ 
+    
+    .benefits{
+      
+      height: 100%;
+      padding: 20px;
+    }
+    .benefits .tittle{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .benefits .tittle h3{
+      width: 50%;
+      text-align: center;
+    }
+    .benefits .button{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    
+      margin-top: 50px;
+      margin-bottom: 100px;
+    }
+    
+    .back-benefits-one:hover,
+    .back-benefits-two:hover,
+    .back-benefits-three:hover{
+      
+      transition: 500ms ease-in-out;
+      filter: opacity(100%);
+      
+    
+    }
+    .back-benefits-one,
+    .back-benefits-three{
+      padding: 10rem 1rem 1rem 1rem;
+      background-size: cover;
+
+      
+    }
+    .back-benefits-two{
+      padding: 10rem 1rem 1rem 1rem;
+      text-align: right;
+      background-size: cover;
+    
+    }
+    
+    
+      }
+  

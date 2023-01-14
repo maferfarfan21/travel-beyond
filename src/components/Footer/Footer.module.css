@@ -1,0 +1,26 @@
+
+.footer{
+    display: flex;
+    padding: 10px 200px  10px 200px;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .socialmedia{
+      display: flex;
+      width: 100px;
+      justify-content: space-between;
+    }
+    @media (max-width: 600px) {
+  
+
+        
+        .footer{
+          display: flex;
+          padding: 10px 20px  10px 20px;
+          justify-content: space-between;
+          align-items: center;
+          justify-content: space-between;
+          align-items: center;
+          }
+          
+          }

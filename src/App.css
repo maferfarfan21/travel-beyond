@@ -1,375 +1,302 @@
+/* 
+Css reset
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap');
-body{
-  background-color: #03070A;
+
+
+
+/* 
+Font Family
+Google font
+*/
+
+
+:root{
+  --primary-font:'Michroma', sans-serif;
+  --secundary-font:  'Montserrat', sans-serif;
+
 }
-h1{
-  font-family: 'Michroma', sans-serif;
-  font-size: 3.125rem;
-}
-h2, h3{
-  font-family: 'Michroma', sans-serif;
-  line-height: 160%;
+
+
+
+/* 
+Font
+
+Michroma
+
+Desktop
+Type-scale: 1.125
+Base 16px
+
+Title large: 1.424rem/22.78px	A Visual Type Scale
+Title medium: 1.266rem/20.25px	A Visual Type Scale
+Title small: 1.125rem/18.00px	A Visual Type Scale
+
+
+Movil
+
+Type-scale: 1.125
+Base 14px 
+
+Title large:1.424rem/19.93px	A Visual Type Scale
+Title medium:1.266rem/17.72px	A Visual Type Scale
+Title small:1.125rem/15.75px	A Visual Type Scale
+
+*/
+
+
+h1, h2, h3, span {
+  margin: 1rem 0 1rem 0;
+  font-family:var(--primary-font);
   font-weight: 400;
-  color: azure;
-}
-h2{
-  font-size: 2.6rem;
-  
+  line-height: 1.3;
 }
 
 
-h3{
-  
-  font-size: 2.2rem;
+.h1,
+h1 {
+  font-size: 3.1rem;
 }
-p{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.125rem;
-  line-height: 160%;
-  font-weight: 300;
+.h2,
+h2 {
+  font-size: 2.1rem;
+}
+.h3,
+h3 {
+  font-size: 1.8rem;
+}
 
-}
-a{
-  
-  background-color:  #00B894;
-  text-decoration: none;
-  color: #282c34;
-  padding: 8px 65px 8px 65px;
-  border-radius: 4px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-}
+
+
 @media (max-width: 600px) {
-  h1{
-    
-    font-size: 2.125rem;
+  
+h1, h2, h3 {
+  margin: 1rem 0 1rem 0;
+  font-family:var(--primary-font);
+  font-weight: 400;
+  line-height: 1.3;
+}
+  .h1,
+  h1 {
+    font-size: 1.7rem;
   }
-  h2{
-    
-    font-size: 1.6rem;
 
+  .h2,
+  h2 {
+    font-size: 1.4rem;
   }
+
+  .h3,
   h3{
-    padding-top: 30px;
     font-size: 1rem;
   }
-  p{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.925rem;
-    line-height: 160%;
-    font-weight: 300;
+
+}
+
+/* 
+Font
+
+Montserrat
+
+Desktop
+Type-scale: 1.125
+Base 16px
+
+
+
+Title large:1.125rem/18.00px	A Visual Type Scale
+Title medium:1rem/16.00px	A Visual Type Scale
+Title small: 0.889rem/14.22px	A Visual Type Scale
+
+
+Movil
+
+Type-scale: 1.125
+Base 14px 
+
+1.125rem/15.75px	A Visual Type Scale
+1rem/14.00px	A Visual Type Scale
+0.889rem/12.44px	A Visual Type Scale
+
+*/
   
-  }
-  a{
-   
-   width: 100%;
-    text-align: center;
-    font-size: 0.925rem;
-    padding: 8px auto 8px auto;
-  
- } 
+span, p, .text-small {
+  margin: .6rem 0 .6re 0;
+  font-family: var(--secundary-font);
+  font-weight: 400;
+  line-height: 1.3;
+  color: var(--five-color);
 }
-h2 span{
-  background: linear-gradient(90deg, #FF5719 0%, rgba(255, 87, 25, 0.54) 111.67%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
+.text-large{
+  font-size: 1.125rem;
 }
-h3 span{
-  color: #00B894;
+.p, 
+p {
+  font-size: 1rem;
+  color: var(--five-color);
 }
 
-.benefits{
-  height: 100%;
-  padding: 0px 200px  0px 200px;
-}
-.benefits .tittle{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.benefits .tittle h3{
-  width: 50%;
-  text-align: center;
-}
-.benefits .button{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-
-  margin-top: 50px;
-  margin-bottom: 100px;
+.text-small {
+  font-size: 1rem;
 }
 
-
-.back-benefits-one,
-.back-benefits-two,
-.back-benefits-three{
-  
-  background-size: 100%;
-  background-attachment: fixed;
-  margin-top: 124px;
-  border-radius: 4px;
-  filter: opacity(60%);
-
-  
-
-}
-.back-benefits-one:hover,
-.back-benefits-two:hover,
-.back-benefits-three:hover{
-  
-  transition: 500ms ease-in-out;
-  filter: opacity(100%);
-  
-
-}
-.back-benefits-one,
-.back-benefits-three{
-  padding: 32px  500px  32px  32px  ;
-  
-}
-.back-benefits-two{
-  padding: 32px   32px  32px 500px  ;
-  text-align: right;
-
-}
-
-.back-benefits-one{
-  background-image: url(./images/Frame-39.webp) ;
-}
-.back-benefits-two{
-  background-image: url(./images/Group-3.webp) ;
-}
-.back-benefits-three{
-  background-image: url(./images/Group-4.webp) ;
-}
-
-
-
-
-.testimonials{
-  display: flex;
-  padding: 0px 200px  0px 200px;
-
-}
-.testimonials .elon{
-  width: 622.5px;
-  height: 634px;
-  background-image: url(./images/elon.png);
-}
-.testimonials .testimonial{
-  height: 100%;
-  margin-top: 200px;
-  width: 40%;
-}
-
-
-
-.form{
-  background-image: url(./images/back-mess.webp);
-  background-size: 100%;
-  height: 100%;
-  padding: 90px 200px  90px 200px;
-  display: flex;
-  
-
-
-}
-.form p{
-  width: 90%;
-}
-form{
-  display: flex;
-  flex-direction: column;
-  width:  100%;
-}
-form input{
-  border-radius: 4px;
-  padding:  8px 16px 8px 16px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.925rem;
-  line-height: 160%;
-  font-weight: 300;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 90%;
-  margin: 16px;
-  border: 1px solid rgba(240, 244, 243, 0.17);
-
-}
-.send{
-  background-color:  #00B894;
-  text-decoration: none;
-  color: #282c34;
-  padding: 8px 64px 8px 64px;
-  border-radius: 4px;
- width: 40%;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-}
-.footer{
-display: flex;
-padding: 10px 200px  10px 200px;
-justify-content: space-between;
-align-items: center;
-}
-.socialmedia{
-  display: flex;
-  width: 100px;
-  justify-content: space-between;
-}
 
 @media (max-width: 600px) {
-  
-.hero{
-  height: 80vh;
-  background-image: url(./images/mars.webp);
-  background-repeat: no-repeat;
-  background-size: 200%;
-  padding: 0 20px;
-  margin: 0;
-
+  .text-large {
+  font-size: 0.8rem;
 }
-
-.logo{
-  width: 100%;
-  font-weight: 400;
-  display: flex;
-  justify-content: center;
-  color: azure;
-  z-index: 10;
-  
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) -55.71%, #FFFFFF 126.43%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-
-}
-.box-hero{
-  width: 100%;
-  margin-top: 100px;
-}
-.box-hero h2, p{
-  color: #F0F4F3;
-}
-
-
-.benefits{
-  
-  height: 100%;
-  padding: 20px;
-}
-.benefits .tittle{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.benefits .tittle h3{
-  width: 50%;
-  text-align: center;
-}
-.benefits .button{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-
-  margin-top: 50px;
-  margin-bottom: 100px;
-}
-
-.back-benefits-one:hover,
-.back-benefits-two:hover,
-.back-benefits-three:hover{
-  
-  transition: 500ms ease-in-out;
-  filter: opacity(100%);
-  
-
-}
-.back-benefits-one,
-.back-benefits-three{
-  padding: 20px;
-  background-size: 200%;
-  
-}
-.back-benefits-two{
-  padding: 20px;
-  text-align: right;
-  background-size: 200%;
-
-}
-
-.testimonials{
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
-
-}
-.testimonials .elon{
-  width: 622.5px;
-  height: 634px;
-  background-position-x: -80px;
-  background-image: url(./images/elon.png);
-}
-.testimonials .testimonial{
-  height: 100%;
-  margin-top: 2px;
-  width: 100%;
-}
-
-
-
-.form{
-  background-image: url(./images/back-mess.webp);
-  background-size: 450%;
-  height: 100%;
-  padding: 0px 20px  0px 20px;
-  display: flex;
-  flex-direction: column;
-}
-.form p{
-  width: 100%;
-}
-
-form input {
- 
-  border-radius: 4px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.925rem;
-  line-height: 160%;
+.p, 
+p {
+  font-size: 0.8
+  rem;
+  color: var(--five-color);
   font-weight: 300;
-  background-color: rgba(0, 0, 0, 0.5);
-  margin-top: 16px;
-  width: 80%;
+}
+
+.text-small {
+  font-size: 0.7rem;
+}
+
+}
+
+
+
+/* 
+Color pallete
+
+*/
+:root{
+
+
+--primary-color: linear-gradient(90deg, #FF5719 0%, rgba(255, 87, 25, 0.54) 111.67%);
+--secundary-color: linear-gradient(89.96deg, #00B894 16.43%, rgba(0, 184, 148, 0.85) 107.92%);
+--third-color: #F3B176;
+--fourth-color: linear-gradient(92.98deg, #AF3997 -31.93%, #1B3798 117.42%);
+--five-color: #FFFDF6;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+  background-color: #03070A;
+  color: var(--five-color);
+}
+button{
+   background: var(--secundary-color);
+    border-radius: 4px;
+   text-decoration: none;
+   width: fit-content;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.8rem 1rem 0.7rem 1rem;
+    font-family: var(--secundary-font);
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    position: relative;
   
-  border: 1px solid rgba(240, 244, 243, 0.17);
+ } 
+ button:hover{
+  background: var(--third-color);
+  transition: 500ms ease-in-out;
+ }
 
-}
-.send{
-  background-color:  #00B894;
-  width: 90%;
-  color: #282c34;
+ button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -3;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, blue, white, aqua, white
+                                    blue, white, aqua, white);
+  background-size: 800%;
   border-radius: 4px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-}
+  filter: blur(8px);
+  animation: glow 20s linear infinite;
+ }
 
-.footer{
-  display: flex;
-  padding: 10px 20px  10px 20px;
-  justify-content: space-between;
-  align-items: center;
+ @keyframes glow{
+  0%{
+    background-position: 0 0;
+
+  }
+  
+  50%{
+    background-position: 400% 0;
+    
+  }
+  100%{
+    background-position: 0 0;
+    
   }
 
-  .socialmedia{
-    display: flex;
-    width: 100px;
-    justify-content: space-between;
-  }
+ }
 
-
-
-
-}
 

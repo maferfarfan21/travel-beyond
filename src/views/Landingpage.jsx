@@ -1,12 +1,8 @@
-import {
-    Benefits,
-    Testimonial,
-    Form,
-    Footer
-    
-  } from "../components/export";
-
 import { Proposition } from "../components/Proposition";
+import { Benefits } from "../components/Benefits";
+import { Footer } from "../components/Footer";
+import { Form } from "../components/Form";
+import { Testimonial } from "../components/Testimonial";
   
   const Landingpage = () => {
     return (
