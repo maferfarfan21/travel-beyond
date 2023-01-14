@@ -56,7 +56,7 @@
   
     }
     .form .textform{
-     
+     width: 80%;
       display: flex;
       flex-direction: column;
       padding: 5rem 0 5rem 0;
